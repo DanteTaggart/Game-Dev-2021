@@ -1,6 +1,6 @@
 <h6> Version 0.0.1 </h6>
 
-<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="Background01">
+<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg">
 
 <h1 align=center>Samuri & ninja</h1>
 <br><br><br><br>
@@ -13,15 +13,15 @@
 
 
    // global functions here
-function myHitOther(my1,my2){
-   left1   = parseInt(document.getElementById(samuri).style.left)
-   right1  = left1 + parseInt(document.getElementById(samuri).style.width)
-   top1    = parseInt(document.getElementById(samuri).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(samuri).style.height)
-   left2   = parseInt(document.getElementById(Ninja01).style.left)
-   right2  = left2 + parseInt(document.getElementById(Ninja01).style.width)
-   top2    = parseInt(document.getElementById(Ninja01).style.top)   
-   bottom2 = top2   + parseInt(document.getElementById(Ninja01).style.height)
+function myHitOther(samuri.jpg,Ninja01.jpg){
+   left1   = parseInt(document.getElementById(samuri.jpg).style.left)
+   right1  = left1 + parseInt(document.getElementById(samuri.jpg).style.width)
+   top1    = parseInt(document.getElementById(samuri.jpg).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(samuri.jpg).style.height)
+   left2   = parseInt(document.getElementById(Ninja01.jpg).style.left)
+   right2  = left2 + parseInt(document.getElementById(Ninja01.jpg).style.width)
+   top2    = parseInt(document.getElementById(Ninja01.jpg).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(Ninja01.jpg).style.height)
    if ((right1  >=  left2  ) &&      	   
        (bottom1 >=  top2   ) &&
        (left1   <=  right2 ) &&
@@ -32,9 +32,9 @@ function myHitOther(my1,my2){
 
 
 function myCheckHit(){
-   if ( myHitOther('samuri','Ninja01') ){
+   if ( myHitOther('samuri.jpg','Ninja01.jpg') ){
        alert('you lose')  
-       document.getElementById('samuri').style.left = '20px'
+       document.getElementById('samuri.jpg').style.left = '20px'
        location = 't2a13-keydown.html'  // go to your next level
    }
 
@@ -48,8 +48,8 @@ function myCheckHit(){
 
 </script>
 
-<img id="samuri" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="samuri">
-<img id="Ninja01" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="Ninja01">
+<img id="samuri" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="samuri.jpg">
+<img id="Ninja01" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="Ninja01.jpg">
 
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
@@ -64,6 +64,6 @@ function myCheckHit(){
 
 
 <input type=button value="Image Right Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('samuri').style.left = parseInt(document.getElementById('samuri').style.left) + 10 + 'px'
+  document.getElementById('samuri.jpg').style.left = parseInt(document.getElementById('samuri.jpg').style.left) + 10 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br><br>
