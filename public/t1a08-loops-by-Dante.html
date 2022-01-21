@@ -17,7 +17,16 @@ Max loops: ,input id="myNum01" type=number value="4" ><br>
 <input type =button value="Basic For Loop with Decisions" onclick="{
                                                                    document.getElementById('myDiv01').innerHTML = ''
                                                                    let myTemp =''
+                                                            
+                                                                   let myMax = parseInt(document.getmyElementById('myNum01').value)
+                                                                   for (myLoop = 0; myLoop < myMax; myLoop++  ){
+                                                                   if (myLoop * 2 > myMax){
+                                                                      myTemp += ' cool '
+                                                                   }
+                                                                    mytemp += 'Loop number: ' + myLoop +'<br>'
+                                                                    document.getElementById('myDiv01').innerHTML + myTemp
+                                                                   }">
+
+
+<div id="myDiv01">...</div>
                                                                    
-                                                                   let myMax = parseInt(document.getElementById('myNum01').value)
-                                                                   for (let myLoop * 2 > myMax; myLoop++ ){
-                                                                   if (myLoop = 0; myLoop < myMax; myLoop==){
