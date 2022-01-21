@@ -18,7 +18,7 @@ function myHitOther(samuri.jpg,Ninja01.jpg){
    right1  = left1 + parseInt(document.getElementById(samuri.jpg).style.width)
    top1    = parseInt(document.getElementById(samuri.jpg).style.top)   
    bottom1 = top1   + parseInt(document.getElementById(samuri.jpg).style.height)
-   left2   = parseInt(document.getElementById(Ninja01.jpg).style.left)
+   left2   = parseInt(document.getElementByIdNinja01.jpg).style.left)
    right2  = left2 + parseInt(document.getElementById(Ninja01.jpg).style.width)
    top2    = parseInt(document.getElementById(Ninja01.jpg).style.top)   
    bottom2 = top2   + parseInt(document.getElementById(Ninja01.jpg).style.height)
@@ -49,7 +49,7 @@ function myCheckHit(){
 </script>
 
 <img id="samuri" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="samuri.jpg">
-<img id="Ninja01" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="Ninja01.jpg">
+<img id="Ninja01.jpg" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="Ninja01.jpg">
 
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
